@@ -2,7 +2,6 @@
 A SIKA wide knowledge hub to overcome information barriers, with accurate and trustworthy information.
 
 ## Installation
-### Usage using Jupyter
 ![Block diagram of SikaMa](BlockDiagram.jpg)
 
 ## Why is SikaMa necessary?
