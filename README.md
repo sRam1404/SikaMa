@@ -53,6 +53,13 @@ An initial version of the domain ontology meta-model was created by manually sel
 
 The query generated interacts with the sparsely populated KB and when found to be deficient, this information can be used by the ML-assisted data-crawler to find the relavant information to augment and grow the knowledge base continuously. The attached screenshot from Protege Desktop, an OWL editor tool is seen below, wherein the entities were deliberately left empty to start the data crawling with ML, which would then identify more items that might be missing one or the other property and value. ![Protege screenshot](/Ontology/Screenshot_Protege.png)
 
+### Instructions to test out Protege as a tool, the sparse-KB and the query interaction
+1. Install Protege Desktop Version 5.5.0-win (tested on Windows laptop).
+2. Navigate to the folder where it was installed and click on ```run.bat``` to start Protege Desktop.
+3. Download the [Onto_Sika.ttl](Ontology/Onto_Sika.ttl), click on ```File -> Open ->``` on Protege menu and navigate to the folder to which the file was downloaded to open the file.
+4. Click on ```Run -> Start Reasoner``` and select ```HermiT``` as the reasoner.
+5. Click on SPARQL Query tab and copy one of the SPARQL query from [here](/Ontology/Query_Cases.txt) and execute the query to get the results.
+
 ## Block 4 - ML-assisted data-crawler and named-entity disambiguation to augment the knowledge base and report the changes to the KPI
 
 ## Usage using Jupyter
