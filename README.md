@@ -1,6 +1,6 @@
 # SikaMa
 A SIKA wide knowledge hub to overcome information barriers, with accurate and trustworthy information.
-
+![Block diagram of SikaMa](BlockDiagram.jpg)
 
 # Usage using Jupyter
 - Download [Anaconda](https://www.anaconda.com/)
