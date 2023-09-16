@@ -47,10 +47,12 @@ SELECT ?Product ?PartHeirarchyNumber
 		?Product sika:value_partheirarchynum ""^^xsd:string  
 }
 ```
+More sample SPARQL queries are included [here](/Ontology/Query_Cases.txt).
 ## Block 3 - Interaction of the SPARQL queries with the knowledge base to identify inconsistencies in KB
-An initial version of the domain ontology meta-model was created by manually selecting the relevant domain features and the an first instance of the ontology with three product instances from the Sika range of products were chosen. The ontology is uploaded [along with this repository](Ontology/Onto_Sika.ttl).
+An initial version of the domain ontology meta-model was created by manually selecting the relevant domain features and the an first instance of the ontology with three product instances from the Sika range of products were chosen. The ontology is uploaded [along with this repository](Ontology/Onto_Sika.ttl) and visualized [/Ontology/Export_Ontology.JPG.jpg](here).
 
-The query generated interacts with the sparsely populated KB and when found to be deficient, this information can be used by the ML-assisted data-crawler to find the relavant information to augment and grow the knowledge base continuously. The attached screenshot from Protege Desktop, an OWL editor tool is seen below, wherein the entities 
+The query generated interacts with the sparsely populated KB and when found to be deficient, this information can be used by the ML-assisted data-crawler to find the relavant information to augment and grow the knowledge base continuously. The attached screenshot from Protege Desktop [/Ontology/Screenshot_Protege.png], an OWL editor tool is seen below, wherein the entities were deliberately left empty to start the data crawling with ML, which would then identify more items that might be missing one or the other property and value. 
+
 ## Block 4 - ML-assisted data-crawler and named-entity disambiguation to augment the knowledge base and report the changes to the KPI
 
 ## Usage using Jupyter
