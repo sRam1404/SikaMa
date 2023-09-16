@@ -24,6 +24,27 @@ As an example: *As a marketing and sales representative, it is important that ev
 ## Block 2 - Conversion of unacceptable knowledge gaps into SPARQL Queries using natural language like domain specific languages
 Armed with the information on what gaps in knowledge should be actively bridged, test engineers could use natural language like domain specific languages to generate the SPARQL queries to interact with the knowledge base. 
 
+```
+Feature: sparql queries are generated to interact with the knowledge model to find the inconsistencies
+
+  Scenario: find products missing product heirarchy number
+     Given we have a list of the unacceptable information gaps, as defined by the stakeholders
+      When we have an initial knowledge model
+      Then select only those products which are missing product heirarchy number
+```
+Domain specific languages are used to reduce the complexity that is involved in writing these test cases. The generated SPARQL query would be:
+```
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX sika: <https://onto4all.com/en/ontologies/834/>
+SELECT ?Product ?PartHeirarchyNumber
+	WHERE {
+		?Product sika:value_partheirarchynum ?PartHeirarchyNumber.
+		?Product sika:value_partheirarchynum ""^^xsd:string  
+}
+```
 ## Block 3 - Interaction of the SPARQL queries with the knowledge base to identify inconsistencies in KB
 (Insert screenshots)
 
