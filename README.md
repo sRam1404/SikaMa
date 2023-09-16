@@ -48,7 +48,9 @@ SELECT ?Product ?PartHeirarchyNumber
 }
 ```
 ## Block 3 - Interaction of the SPARQL queries with the knowledge base to identify inconsistencies in KB
-The 
+An initial version of the domain ontology meta-model was created by manually selecting the relevant domain features and the an first instance of the ontology with three product instances from the Sika range of products were chosen. The ontology is uploaded [along with this repository](Ontology/Onto_Sika.ttl).
+
+Building upon the 
 
 ## Block 4 - ML-assisted data-crawler and named-entity disambiguation to augment the knowledge base and report the changes to the KPI
 
