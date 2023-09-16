@@ -1,1 +1,1 @@
-![Knowledge base export](/SikaMa/Ontology/Export_Ontology.JPG)
+![Knowledge base export](Export_Ontology.JPG.jpg)
