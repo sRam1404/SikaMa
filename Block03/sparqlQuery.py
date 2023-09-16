@@ -11,7 +11,7 @@ def main():
 
 def queryFunc(case):
     input = Graph()
-    input.parse('Onto_Sika.ttl') #Import the database in ttl format
+    input.parse('SikaMa/Ontology/Onto_Sika.ttl') #Import the database in ttl format from Ontology folder
 
     if case == "PartHeirarchyNumber": #send the query to the database based on keywords
         queryOut = input.query('''
