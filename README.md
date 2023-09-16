@@ -11,7 +11,8 @@ So, instead of firefighting when inefficiencies and information gaps arise, you 
 3) The test engineer can then convert these gap formulations into test cases for 
 
 # Working with the tool
-There are four key components to realize SikiMa in its current iteration, and these components are depicted in the block diagram and described in detail in the following subsections: 
+There are four key components to realize SikiMa in its current iteration, and these components are depicted in the block diagram and described in detail in the following subsections:  
+
 ## Block diagram
 ![Block diagram of SikaMa](BlockDiagram.jpg)
 
