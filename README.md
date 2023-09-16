@@ -1,7 +1,7 @@
 # SikaMa - Accurate and trustworthy information for Sika
 A SIKA wide knowledge hub to overcome information barriers, with accurate and trustworthy information.
 
-## Installation
+## Block diagram
 ![Block diagram of SikaMa](BlockDiagram.jpg)
 
 ## Why is SikaMa necessary?
