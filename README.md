@@ -61,17 +61,19 @@ The query generated interacts with the sparsely populated KB and when found to b
 5. Click on SPARQL Query tab and copy one of the SPARQL query from [here](/Ontology/Query_Cases.txt) and execute the query to get the results.
 
 ## Block 4 - ML-assisted data-crawler and named-entity disambiguation to augment the knowledge base and report the changes to the KPI
-
-## Usage using Jupyter
+We fine tuned LLM App using LangChain, OpenAI, Python. Using Vector database like pinecone which follows steps of **embedding**, **indexing** and **querying**.
+### Usage using Jupyter
 - Download [Anaconda](https://www.anaconda.com/)
 - Then open this repo with **Jupyter**, then you will be able to interact with this AI Assistent.
 
-## Dependencies to run sparqlQuery.py
+### Dependencies to run sparqlQuery.py
 - Install rdblib - "pip install rdblib". More information on rdblib can be found [here](https://rdflib.readthedocs.io/en/stable/apidocs/rdflib.html#rdflib.graph.Graph.query).
 - It is suggested to run the code in virtual environment.
 
-# Current limitations
-
 # Future challenges and further research
-
+- Extend the KPI's to find more unacceptable gaps by interacting with the stakeholders.
+- Currently seen for internal purposes, purely to bridge gaps.
+  - But SikaMa can be used to answer customer queries in the future.
+  - A customer should only get back information that is freely available in the public-domain. Private, company-internal and confidential information should not be disclosed.
+    
 # Sources
