@@ -1,0 +1,240 @@
+@prefix : <https://onto4all.com/en/ontologies/834/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://onto4all.com/en/ontologies/834/> .
+
+<https://onto4all.com/en/ontologies/834/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://onto4all.com/en/ontologies/834/has
+:has rdf:type owl:ObjectProperty .
+
+
+###  https://onto4all.com/en/ontologies/834/instance_of
+:instance_of rdf:type owl:ObjectProperty .
+
+
+###  https://onto4all.com/en/ontologies/834/is_a
+:is_a rdf:type owl:ObjectProperty .
+
+
+###  https://onto4all.com/en/ontologies/834/part_of
+:part_of rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:domain :Product ;
+         rdfs:range :Brand .
+
+
+###  https://onto4all.com/en/ontologies/834/used_in
+:used_in rdf:type owl:ObjectProperty ;
+         rdfs:domain :Product ;
+         rdfs:range :Application ,
+                    :Industry .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://onto4all.com/en/ontologies/834/value_articlenum
+:value_articlenum rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdfs:domain :Product ;
+                  rdfs:range xsd:integer .
+
+
+###  https://onto4all.com/en/ontologies/834/value_faq
+:value_faq rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:range xsd:string .
+
+
+###  https://onto4all.com/en/ontologies/834/value_partheirarchynum
+:value_partheirarchynum rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  https://onto4all.com/en/ontologies/834/value_productinformationsheet
+:value_productinformationsheet rdf:type owl:DatatypeProperty ;
+                               rdfs:subPropertyOf owl:topDataProperty ;
+                               rdfs:domain :Product ;
+                               rdfs:range xsd:string .
+
+
+###  https://onto4all.com/en/ontologies/834/value_safetydatasheet
+:value_safetydatasheet rdf:type owl:DatatypeProperty ;
+                       rdfs:subPropertyOf owl:topDataProperty ;
+                       rdfs:domain :SafetyDataSheet ;
+                       rdfs:range xsd:string .
+
+
+###  https://onto4all.com/en/ontologies/834/value_usedapplications
+:value_usedapplications rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:seeAlso :Application .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://onto4all.com/en/ontologies/834/AdvancedResins
+:AdvancedResins rdf:type owl:Class ;
+                rdfs:subClassOf :Industry .
+
+
+###  https://onto4all.com/en/ontologies/834/Application
+:Application rdf:type owl:Class ;
+             rdfs:subClassOf :DomainObjects .
+
+
+###  https://onto4all.com/en/ontologies/834/Automotive
+:Automotive rdf:type owl:Class ;
+            rdfs:subClassOf :Transportation .
+
+
+###  https://onto4all.com/en/ontologies/834/AutomotiveAftermarket
+:AutomotiveAftermarket rdf:type owl:Class ;
+                       rdfs:subClassOf :Automotive .
+
+
+###  https://onto4all.com/en/ontologies/834/Brand
+:Brand rdf:type owl:Class ;
+       rdfs:subClassOf :DomainObjects .
+
+
+###  https://onto4all.com/en/ontologies/834/BuildingComponents
+:BuildingComponents rdf:type owl:Class ;
+                    rdfs:subClassOf :Industry .
+
+
+###  https://onto4all.com/en/ontologies/834/ChemicalProduct
+:ChemicalProduct rdf:type owl:Class ;
+                 rdfs:subClassOf :Product .
+
+
+###  https://onto4all.com/en/ontologies/834/DomainObjects
+:DomainObjects rdf:type owl:Class .
+
+
+###  https://onto4all.com/en/ontologies/834/Industry
+:Industry rdf:type owl:Class ;
+          rdfs:subClassOf :DomainObjects .
+
+
+###  https://onto4all.com/en/ontologies/834/Marine
+:Marine rdf:type owl:Class ;
+        rdfs:subClassOf :Automotive .
+
+
+###  https://onto4all.com/en/ontologies/834/Product
+:Product rdf:type owl:Class ;
+         rdfs:subClassOf :DomainObjects .
+
+
+###  https://onto4all.com/en/ontologies/834/ProductDataSheet
+:ProductDataSheet rdf:type owl:Class ;
+                  rdfs:subClassOf :DomainObjects .
+
+
+###  https://onto4all.com/en/ontologies/834/RenewableMaterials
+:RenewableMaterials rdf:type owl:Class ;
+                    rdfs:subClassOf :Industry .
+
+
+###  https://onto4all.com/en/ontologies/834/SafetyDataSheet
+:SafetyDataSheet rdf:type owl:Class ;
+                 rdfs:subClassOf :DomainObjects .
+
+
+###  https://onto4all.com/en/ontologies/834/SikaBiresin
+:SikaBiresin rdf:type owl:Class ;
+             rdfs:subClassOf :Brand .
+
+
+###  https://onto4all.com/en/ontologies/834/SikaFlex
+:SikaFlex rdf:type owl:Class ;
+          rdfs:subClassOf :Brand .
+
+
+###  https://onto4all.com/en/ontologies/834/SikaLastomer
+:SikaLastomer rdf:type owl:Class ;
+              rdfs:subClassOf :Brand .
+
+
+###  https://onto4all.com/en/ontologies/834/SikaSense
+:SikaSense rdf:type owl:Class ;
+           rdfs:subClassOf :Brand .
+
+
+###  https://onto4all.com/en/ontologies/834/SikaTack
+:SikaTack rdf:type owl:Class ;
+          rdfs:subClassOf :Brand .
+
+
+###  https://onto4all.com/en/ontologies/834/Sikasil
+:Sikasil rdf:type owl:Class ;
+         rdfs:subClassOf :Brand .
+
+
+###  https://onto4all.com/en/ontologies/834/TextilesConsumables
+:TextilesConsumables rdf:type owl:Class ;
+                     rdfs:subClassOf :Industry .
+
+
+###  https://onto4all.com/en/ontologies/834/Transportation
+:Transportation rdf:type owl:Class ;
+                rdfs:subClassOf :Industry .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://onto4all.com/en/ontologies/834/Sika_Injection-216
+:Sika_Injection-216 rdf:type owl:NamedIndividual ,
+                             :ChemicalProduct ;
+                    :value_partheirarchynum "020707010020000044"^^xsd:string ;
+                    :value_productinformationsheet "SikaInjection-216-en-MY-(01-2023)-2-1.pdf"^^xsd:string .
+
+
+###  https://onto4all.com/en/ontologies/834/Adekit®_A_175-1
+<https://onto4all.com/en/ontologies/834/Adekit®_A_175-1> rdf:type owl:NamedIndividual ,
+                                                                  :ChemicalProduct ;
+                                                         :value_partheirarchynum ""^^xsd:string ;
+                                                         :value_productinformationsheet "TestFile.pdf"^^xsd:string .
+
+
+###  https://onto4all.com/en/ontologies/834/SikaForce®-490_L15
+<https://onto4all.com/en/ontologies/834/SikaForce®-490_L15> rdf:type owl:NamedIndividual ,
+                                                                     :ChemicalProduct ;
+                                                            :value_partheirarchynum ""^^xsd:string ;
+                                                            :value_productinformationsheet ""^^xsd:string .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Sika_Injection-216
+                        <https://onto4all.com/en/ontologies/834/Adekit®_A_175-1>
+                        <https://onto4all.com/en/ontologies/834/SikaForce®-490_L15>
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( <https://onto4all.com/en/ontologies/834/Adekit®_A_175-1>
+                        <https://onto4all.com/en/ontologies/834/SikaForce®-490_L15>
+                      )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
