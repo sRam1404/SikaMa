@@ -9,7 +9,8 @@ So, instead of firefighting when inefficiencies and information gaps arise, you 
 1) Knowledge Representation and Reasoning forms the backbone of this knowledge base (KB). 
 2) The various stakeholders define what gaps are unacceptable. The construction industry, which is still in the nascent stages of digitalization could be missing critical information, like the product heirarchy numbers of SIKA products. The formulation of the gaps are used as key performance indicators (KPI), which can be objectively measured and quantified.
 3) The test engineer can then convert these gap formulations into queries to test and verify the KB.
-4) The missing entities, their properties are then provided to the ML-assisted data-crawler to find the necessary information from documents, web-pages and other sources (eventually norms, or other non-Sika documents as well).
+4) The missing entities, their properties are then provided to the ML-assisted data-crawler to find the necessary information from documents, web-pages and other sources (eventually norms, or other non-Sika documents as well). The entities, its properties and values are then added to the KB.
+5) A report of the improvement in the KPI achieved is provided as an objective measure to all the involved stakeholders.
 
 # Working with the tool
 There are four key components to realize SikiMa in its current iteration, and these components are depicted in the block diagram and described in detail in the following subsections:  
