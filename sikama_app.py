@@ -1,6 +1,9 @@
 import streamlit as st
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 # Loading PDF, DOCX, TXT as langchain documents
 # Loading XLSX file should be included.
