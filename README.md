@@ -17,10 +17,12 @@ There are four key components to realize SikiMa in its current iteration, and th
 ![Block diagram of SikaMa](BlockDiagram.jpg)
 
 ## Block 1 - Unacceptable knowledge gaps as Key-performance indicator
-(Insert screenshots)
+Different stakeholders involved at Sika, like top-level management, product managers, engineers and sales persons, just to name a few personas, elicit what in their eyes would be an unacceptable gap to have in their information management.
+
+As an example: *As a marketing and sales representative, it is important that every Sika product in the market should have a unique identifier, called as "Product Hierarchy Number."*
 
 ## Block 2 - Conversion of unacceptable knowledge gaps into SPARQL Queries using natural language like domain specific languages
-(Insert screenshots)
+Armed with the information on what gaps in knowledge should be actively bridged, test engineers could use natural language like domain specific languages to generate the SPARQL queries to interact with the knowledge base. 
 
 ## Block 3 - Interaction of the SPARQL queries with the knowledge base to identify inconsistencies in KB
 (Insert screenshots)
