@@ -48,9 +48,9 @@ SELECT ?Product ?PartHeirarchyNumber
 }
 ```
 ## Block 3 - Interaction of the SPARQL queries with the knowledge base to identify inconsistencies in KB
-(Insert screenshots)
+The 
 
-## Block 4 - ML-assisted 
+## Block 4 - ML-assisted data-crawler and named-entity disambiguation to augment the knowledge base and report the changes to the KPI
 
 ## Usage using Jupyter
 - Download [Anaconda](https://www.anaconda.com/)
