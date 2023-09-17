@@ -75,5 +75,3 @@ We fine tuned LLM App using LangChain, OpenAI, Python. Using Vector database lik
 - Currently seen for internal purposes, purely to bridge gaps.
   - But SikaMa can be used to answer customer queries in the future.
   - A customer should only get back information that is freely available in the public-domain. Private, company-internal and confidential information should not be disclosed.
-    
-# Sources
