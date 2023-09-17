@@ -1,6 +1,14 @@
 import streamlit as st
+
+st.set_page_config(
+    page_title="SikaMa",
+    page_icon="🤖"
+)
+
+
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma 
+
 
 
 # Loading PDF, DOCX, TXT as langchain documents
