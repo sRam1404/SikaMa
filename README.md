@@ -1,6 +1,8 @@
 # SikaMa - Accurate and trustworthy information for Sika
 A SIKA wide knowledge hub to overcome information barriers, with accurate and trustworthy information.
 
+This project was developed as a part of the HackZurich 2023 event.
+
 ## Why is SikaMa necessary?
 Imagine actively taking steps to reduce information gaps, without having to hunt for every last inefficiency out there in your knowledge management. What if you could overcome organizational silos, one regular CI/CD build at a time?
 So, instead of firefighting when inefficiencies and information gaps arise, you stay ahead of the digital transformation curve with SikaMa.
