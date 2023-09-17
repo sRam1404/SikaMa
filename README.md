@@ -64,6 +64,10 @@ The query generated interacts with the sparsely populated KB and when found to b
 
 ## Block 4 - ML-assisted data-crawler and named-entity disambiguation to augment the knowledge base and report the changes to the KPI
 We fine tuned LLM App using LangChain, OpenAI, Python. Using Vector database like pinecone which follows steps of **embedding**, **indexing** and **querying**.
+
+- Link for web app is [here](https://sikama.streamlit.app/)
+
+
 ### Usage using Jupyter
 - Download [Anaconda](https://www.anaconda.com/)
 - Then open this repo with **Jupyter**, then you will be able to interact with this AI Assistent.
